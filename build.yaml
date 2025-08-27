@@ -3,4 +3,5 @@ include:
     shield: duolith_left
   - board: nice_nano_v2
     shield: duolith_right
-
+  - board: nice_nano_v2
+    shield: settings_reset
