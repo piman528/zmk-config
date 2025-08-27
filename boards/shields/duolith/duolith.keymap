@@ -12,17 +12,10 @@
 
         default_layer {
             bindings = <
-                // Row 0: Left 5 (Q W E R T) + left col5 unused + Right 5 (Y U I O P)
-                &kp Q   &kp W   &kp E     &kp R     &kp T     &trans   &kp Y   &kp U   &kp I     &kp O     &kp P
-
-                // Row 1: Left 5 (A S D F G) + left col5 unused + Right 5 (H J K L ;)
-                &kp A   &kp S   &kp D     &kp F     &kp G     &trans   &kp H   &kp J   &kp K     &kp L     &kp SCLN
-
-                // Row 2: Left 5 (Z X C V B) + left col5 unused + Right 5 (N M , . /)
-                &kp Z   &kp X   &kp C     &kp V     &kp B     &trans   &kp N   &kp M   &kp COMMA &kp DOT   &kp SLASH
-
-                // Row 3: Unused (all transparent)
-                &trans  &trans  &trans    &trans    &trans    &trans   &trans  &trans  &trans    &trans    &trans
+                &kp Q &kp W &kp E &kp R &kp T &none &kp Y &kp U &kp I &kp O &kp P
+                &kp A &kp S &kp D &kp F &kp G &none &kp H &kp J &kp K &kp L &kp SEMI
+                &kp Z &kp X &kp C &kp V &kp B &none &kp N &kp M &kp COMMA &kp DOT &kp SLASH
+                &none &none &none &none &none &none &none &none &none &none &none
             >;
         };
     };
