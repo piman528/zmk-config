@@ -1,0 +1,16 @@
+if SHIELD_DUOLITH_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "duolith"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_DUOLITH_LEFT
+
+if SHIELD_DUOLITH_LEFT || SHIELD_DUOLITH_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_DUOLITH_LEFT || SHIELD_DUOLITH_RIGHT

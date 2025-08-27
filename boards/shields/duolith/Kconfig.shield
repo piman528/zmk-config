@@ -1,0 +1,5 @@
+config SHIELD_DUOLITH_LEFT
+    def_bool $(shields_list_contains,duolith_left)
+
+config SHIELD_DUOLITH_RIGHT
+    def_bool $(shields_list_contains,duolith_right)
