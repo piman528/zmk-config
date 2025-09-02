@@ -9,6 +9,15 @@
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
 
+    combos {
+        compatible = "zmk,combos";
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <34 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -25,7 +34,7 @@
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT          &kp CARET  &kp AMPERSAND      &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans           &trans       &trans    &trans      &trans               &kp LBKT   &kp RBKT           &kp BACKSLASH  &kp MINUS             &kp EQUAL
-&studio_unlock   &trans       &trans    &trans      &trans               &kp COLON  &kp DOUBLE_QUOTES  &kp COMMA      &kp DOT               &kp SLASH
+&trans           &trans       &trans    &trans      &trans               &kp COLON  &kp DOUBLE_QUOTES  &kp COMMA      &kp DOT               &kp SLASH
 &trans           &trans       &trans    &trans      &trans       &trans  &trans     &trans                            &trans                &trans
             >;
         };
@@ -50,10 +59,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans                      &trans        &trans
+&studio_unlock  &trans  &trans  &trans  &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
+&trans          &trans  &trans  &trans  &trans          &trans        &trans        &trans        &trans        &trans
+&trans          &trans  &trans  &trans  &trans          &trans        &trans        &trans        &trans        &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans        &trans                      &trans        &trans
             >;
         };
     };
