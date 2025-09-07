@@ -19,7 +19,7 @@
 &kp Q      &kp W           &kp E         &kp R                    &kp T                   &kp Y            &kp U                     &kp I      &kp O            &kp P
 &kp A      &kp S           &kp D         &kp F                    &kp G                   &kp H            &kp J                     &kp K      &kp L            &kp ENTER
 &kp Z      &kp X           &kp C         &kp V                    &kp B                   &kp N            &kp M                     &kp COMMA  &kp DOT          &kp SLASH
-&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_GUI LANGUAGE_2  &lt 1 SPACE  &lt 2 TAB  &lt 3 BACKSPACE  &mt RIGHT_GUI LANGUAGE_1             &kp RIGHT_SHIFT  &kp ESC
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &mt LEFT_GUI LANGUAGE_1  &lt 1 SPACE  &lt 2 TAB  &lt 3 BACKSPACE  &mt RIGHT_GUI LANGUAGE_2             &kp RIGHT_SHIFT  &kp ESC
             >;
         };
 
