@@ -12,6 +12,13 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif # BOARD_DUOLITH_LEFT
 
+if BOARD_DUOLITH_RIGHT
+
+config SPI
+    default y
+
+endif # BOARD_DUOLITH_RIGHT
+
 if BOARD_DUOLITH_LEFT || BOARD_DUOLITH_RIGHT
 
 if USB
@@ -26,5 +33,8 @@ endif # USB
 
 config BT_CTLR
     default BT
+
+config ZMK_POINTING
+    default y
 
 endif # BOARD_DUOLITH_LEFT || BOARD_DUOLITH_RIGHT
