@@ -13,4 +13,4 @@
 
 &trackball_listener {
     status = "okay";
-}
+};
