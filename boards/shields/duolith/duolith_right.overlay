@@ -68,8 +68,8 @@
         /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
     };
 };
-
-&trackball_listener {
-    status = "okay";
+&trackball_split {
     device = <&trackball>;
+    // Optional
+    // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };

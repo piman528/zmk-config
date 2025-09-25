@@ -1,14 +1,5 @@
 if SHIELD_DUOLITH_RIGHT
 
-config ZMK_KEYBOARD_NAME
-    default "duolith"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_POINTING
-    default y
-
 config PMW3610
     default y
 
@@ -20,7 +11,20 @@ config SPI
 
 endif # SHIELD_DUOLITH_RIGHT
 
+if SHIELD_DUOLITH_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "duolith"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_DUOLITH_LEFT
+
 if SHIELD_DUOLITH_LEFT || SHIELD_DUOLITH_RIGHT
+
+config ZMK_POINTING
+    default y
 
 config ZMK_SPLIT
     default y
