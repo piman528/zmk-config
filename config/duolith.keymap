@@ -63,8 +63,17 @@
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &mo 6           &mkp LCLK     &mkp RCLK     &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &msc MOVE_Y(10)  &mkp LCLK  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans     &trans
+            >;
+        };
+
+                layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans     &trans
             >;
         };
